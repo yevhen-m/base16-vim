@@ -294,6 +294,10 @@ call <sid>hi("SpellLocal",   "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellCap",     "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SpellRare",    "", s:gui00, "", s:cterm00, "undercurl")
 
+" Sneak highlighting
+call <sid>hi("SneakLabel", "", "", s:cterm01, s:cterm0A, "bold")
+call <sid>hi("Sneak", "", "", s:cterm01, s:cterm0A, "bold")
+
 " Remove functions
 delf <sid>hi
 delf <sid>gui
