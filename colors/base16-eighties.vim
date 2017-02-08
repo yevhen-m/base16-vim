@@ -298,6 +298,9 @@ call <sid>hi("SpellRare",    "", s:gui00, "", s:cterm00, "undercurl")
 call <sid>hi("SneakLabel", "", "", s:cterm01, s:cterm0A, "bold")
 call <sid>hi("Sneak", "", "", s:cterm01, s:cterm0A, "bold")
 
+" Quickfix
+highlight link QuickFixLine Visual
+
 " Remove functions
 delf <sid>hi
 delf <sid>gui
