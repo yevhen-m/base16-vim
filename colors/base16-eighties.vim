@@ -232,10 +232,10 @@ call <sid>hi("gitCommitOverflow",  s:gui08, "", s:cterm08, "", "")
 call <sid>hi("gitCommitSummary",   s:gui0B, "", s:cterm0B, "", "")
 
 " GitGutter highlighting
-call <sid>hi("GitGutterAdd",     s:gui0B, s:gui01, s:cterm0B, s:cterm01, "")
-call <sid>hi("GitGutterChange",  s:gui0D, s:gui01, s:cterm0D, s:cterm01, "")
-call <sid>hi("GitGutterDelete",  s:gui08, s:gui01, s:cterm08, s:cterm01, "")
-call <sid>hi("GitGutterChangeDelete",  s:gui0E, s:gui01, s:cterm0E, s:cterm01, "")
+highlight GitGutterAdd ctermfg=2 ctermbg=18 cterm=bold
+highlight GitGutterChange ctermfg=4 ctermbg=18 cterm=bold
+highlight GitGutterDelete ctermfg=1 ctermbg=18 cterm=bold
+highlight GitGutterChangeDelete ctermfg=5 ctermbg=18 cterm=bold
 
 " HTML highlighting
 call <sid>hi("htmlBold",    s:gui0A, "", s:cterm0A, "", "")
@@ -300,6 +300,15 @@ call <sid>hi("Sneak", "", "", s:cterm01, s:cterm0A, "bold")
 
 " Quickfix
 highlight link QuickFixLine Visual
+highlight link qfError LineNr
+
+" Syntastic
+highlight SyntasticErrorSign ctermbg=18 ctermfg=red
+highlight SyntasticWarningSign ctermbg=18 ctermfg=yellow
+
+" ALE
+highlight link ALEErrorSign SyntasticErrorSign
+highlight link ALEWarningSign SyntasticWarningSign
 
 " Remove functions
 delf <sid>hi
