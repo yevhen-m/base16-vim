@@ -310,6 +310,9 @@ highlight SyntasticWarningSign ctermbg=18 ctermfg=yellow
 highlight link ALEErrorSign SyntasticErrorSign
 highlight link ALEWarningSign SyntasticWarningSign
 
+" Matchparen
+hi MatchParen cterm=none ctermbg=19 ctermfg=7
+
 " Remove functions
 delf <sid>hi
 delf <sid>gui
