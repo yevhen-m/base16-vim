@@ -219,5 +219,5 @@ delf <sid>hi
 
 " Remove color variables
 unlet s:black s:dark_gray s:semi_dark_gray s:mid_gray s:light_gray
-      \ s:white s:bright_white s:cterm07 s:red s:orange s:yellow
+      \ s:white s:bright_white s:red s:orange s:yellow
       \ s:green s:cyan s:blue s:magenta s:brown
