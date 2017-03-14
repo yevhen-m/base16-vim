@@ -214,6 +214,14 @@ highlight link ALEWarningSign SyntasticWarningSign
 " Matchparen
 call <sid>hi("MatchParen", s:white, s:semi_dark_gray, "")
 
+" Vimfiler
+highlight link vimfilerNonMark    NERDTreeDirSlash
+highlight link vimfilerLeaf       NERDTreeDirSlash
+highlight link vimfilerClosedFile NERDTreeDirSlash
+highlight link vimfilerOpenedFile Normal
+highlight link vimfilerNormalFile Comment
+highlight link vimfilerMarkedFile Type
+
 " Remove functions
 delf <sid>hi
 
