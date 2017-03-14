@@ -216,8 +216,6 @@ hi MatchParen cterm=none ctermbg=19 ctermfg=7
 
 " Remove functions
 delf <sid>hi
-delf <sid>gui
-delf <sid>cterm
 
 " Remove color variables
 unlet s:black s:dark_gray s:semi_dark_gray s:mid_gray s:light_gray
