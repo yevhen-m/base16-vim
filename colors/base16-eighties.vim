@@ -34,10 +34,10 @@ let g:colors_name = "base16-eighties"
 " Highlighting function
 fun <sid>hi(group, ctermfg, ctermbg, attr)
   if a:ctermfg != ""
-    exec "hi " . a:group . " ctermfg=" . s:cterm(a:ctermfg)
+    exec "hi " . a:group . " ctermfg=" . a:ctermfg
   endif
   if a:ctermbg != ""
-    exec "hi " . a:group . " ctermbg=" . s:cterm(a:ctermbg)
+    exec "hi " . a:group . " ctermbg=" . a:ctermbg
   endif
   if a:attr != ""
     exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
