@@ -142,10 +142,10 @@ call <sid>hi("gitCommitOverflow", s:red,   "", "")
 call <sid>hi("gitCommitSummary",  s:green, "", "")
 
 " GitGutter highlighting
-highlight GitGutterAdd ctermfg=2 ctermbg=18 cterm=bold
-highlight GitGutterChange ctermfg=4 ctermbg=18 cterm=bold
-highlight GitGutterDelete ctermfg=1 ctermbg=18 cterm=bold
-highlight GitGutterChangeDelete ctermfg=5 ctermbg=18 cterm=bold
+call <sid>hi("GitGutter",             s:green,   s:dark_gray, "bold")
+call <sid>hi("GitGutterChange",       s:blue,    s:dark_gray, "bold")
+call <sid>hi("GitGutterDelete",       s:red,     s:dark_gray, "bold")
+call <sid>hi("GitGutterChangeDelete", s:magenta, s:dark_gray, "bold")
 
 " HTML highlighting
 call <sid>hi("htmlBold",   s:yellow,  "", "")
@@ -204,15 +204,15 @@ highlight link QuickFixLine Visual
 highlight link qfError LineNr
 
 " Syntastic
-highlight SyntasticErrorSign ctermbg=18 ctermfg=red
-highlight SyntasticWarningSign ctermbg=18 ctermfg=yellow
+call <sid>hi("SyntasticErrorSign", s:red, s:dark_gray, "")
+call <sid>hi("SyntasticWarningSign", s:yellow, s:dark_gray, "")
 
 " ALE
 highlight link ALEErrorSign SyntasticErrorSign
 highlight link ALEWarningSign SyntasticWarningSign
 
 " Matchparen
-hi MatchParen cterm=none ctermbg=19 ctermfg=7
+call <sid>hi("MatchParen", s:white, s:semi_dark_gray, "")
 
 " Remove functions
 delf <sid>hi
