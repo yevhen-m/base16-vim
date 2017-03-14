@@ -219,7 +219,7 @@ highlight link vimfilerNonMark    NERDTreeDirSlash
 highlight link vimfilerLeaf       NERDTreeDirSlash
 highlight link vimfilerClosedFile NERDTreeDirSlash
 highlight link vimfilerOpenedFile Normal
-highlight link vimfilerNormalFile Comment
+highlight link vimfilerNormalFile Normal
 highlight link vimfilerMarkedFile Type
 
 " Remove functions
