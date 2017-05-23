@@ -91,7 +91,7 @@ call <sid>hi("TabLineSel",   s:green,          s:dark_gray,      "none")
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:orange,   "",          "")
 call <sid>hi("Character",    s:red,      "",          "")
-call <sid>hi("Comment",      s:mid_gray, "",          "")
+call <sid>hi("Comment",      s:mid_gray, "",          "italic")
 call <sid>hi("Conditional",  s:magenta,  "",          "")
 call <sid>hi("Constant",     s:orange,   "",          "")
 call <sid>hi("Define",       s:magenta,  "",          "none")
