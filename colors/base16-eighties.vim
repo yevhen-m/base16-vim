@@ -127,7 +127,7 @@ call <sid>hi("cssClassName", s:magenta, "", "")
 call <sid>hi("cssColor",     s:cyan,    "", "")
 
 " Diff highlighting
-call <sid>hi("DiffAdd",     s:green,    s:dark_gray, "")
+call <sid>hi("DiffAdd",     s:green,    "", "bold")
 call <sid>hi("DiffChange",  s:mid_gray, s:dark_gray, "")
 call <sid>hi("DiffDelete",  s:red,      s:dark_gray, "")
 call <sid>hi("DiffText",    s:blue,     s:dark_gray, "")
