@@ -5,9 +5,6 @@
 " :colorscheme works in terminals supported by base16-shell scripts
 " User must set this variable in .vimrc
 " let g:base16_shell_path=base16-builder/output/shell/
-if exists("g:base16_shell_script_path")
-  execute "silent !/bin/sh ".g:base16_shell_script_path
-endif
 
 " Terminal color definitions
 let s:black          = "00"
@@ -86,7 +83,7 @@ call <sid>hi("PMenu",        s:light_gray,     s:dark_gray,      "none")
 call <sid>hi("PMenuSel",     s:dark_gray,      s:light_gray,     "")
 call <sid>hi("TabLine",      s:mid_gray,       s:dark_gray,      "none")
 call <sid>hi("TabLineFill",  s:mid_gray,       s:dark_gray,      "none")
-call <sid>hi("TabLineSel",   s:green,          s:dark_gray,      "none")
+call <sid>hi("TabLineSel",   s:light_gray,     s:semi_dark_gray, "none")
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:orange,   "",          "")
