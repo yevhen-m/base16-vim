@@ -196,6 +196,9 @@ call <sid>hi("SpellLocal", "", s:black, "undercurl")
 call <sid>hi("SpellCap",   "", s:black, "undercurl")
 call <sid>hi("SpellRare",  "", s:black, "undercurl")
 
+" Statusline
+call <sid>hi("User1", s:light_gray, s:semi_dark_gray, "bold")
+
 " Quickfix
 highlight link QuickFixLine Visual
 highlight link qfError LineNr
