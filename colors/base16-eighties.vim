@@ -69,8 +69,8 @@ call <sid>hi("Conceal",      s:semi_dark_gray, s:black,          "")
 call <sid>hi("Cursor",       s:black,          s:white,          "")
 call <sid>hi("NonText",      s:mid_gray,       "",               "")
 call <sid>hi("Normal",       s:white,          s:black,          "")
-call <sid>hi("LineNr",       s:mid_gray,       s:dark_gray,      "")
-call <sid>hi("SignColumn",   s:mid_gray,       s:dark_gray,      "")
+call <sid>hi("LineNr",       s:mid_gray,       s:black,      "")
+call <sid>hi("SignColumn",   s:mid_gray,       s:black,      "")
 call <sid>hi("SpecialKey",   s:mid_gray,       "",               "")
 call <sid>hi("StatusLine",   s:white,     s:semi_dark_gray, "none")
 call <sid>hi("StatusLineNC", s:mid_gray,       s:dark_gray,      "none")
@@ -139,10 +139,10 @@ call <sid>hi("gitCommitOverflow", s:red,   "", "")
 call <sid>hi("gitCommitSummary",  s:green, "", "")
 
 " GitGutter highlighting
-call <sid>hi("GitGutter",             s:green,   s:dark_gray, "bold")
-call <sid>hi("GitGutterChange",       s:blue,    s:dark_gray, "bold")
-call <sid>hi("GitGutterDelete",       s:red,     s:dark_gray, "bold")
-call <sid>hi("GitGutterChangeDelete", s:magenta, s:dark_gray, "bold")
+call <sid>hi("GitGutter",             s:green,   s:black, "bold")
+call <sid>hi("GitGutterChange",       s:blue,    s:black, "bold")
+call <sid>hi("GitGutterDelete",       s:red,     s:black, "bold")
+call <sid>hi("GitGutterChangeDelete", s:magenta, s:black, "bold")
 
 " HTML highlighting
 call <sid>hi("htmlBold",   s:yellow,  "", "")
@@ -204,8 +204,8 @@ highlight link QuickFixLine Visual
 highlight link qfError LineNr
 
 " Syntastic
-call <sid>hi("SyntasticErrorSign", s:red, s:dark_gray, "")
-call <sid>hi("SyntasticWarningSign", s:yellow, s:dark_gray, "")
+call <sid>hi("SyntasticErrorSign", s:red, s:black, "")
+call <sid>hi("SyntasticWarningSign", s:yellow, s:black, "")
 
 " ALE
 highlight link ALEErrorSign SyntasticErrorSign
