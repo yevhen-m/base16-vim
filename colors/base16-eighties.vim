@@ -200,7 +200,7 @@ call <sid>hi("SpellRare",  "", s:black, "undercurl")
 call <sid>hi("User1", s:light_gray, s:semi_dark_gray, "bold")
 
 " Quickfix
-highlight link QuickFixLine Visual
+highlight link QuickFixLine CursorLine
 highlight link qfError LineNr
 
 " Syntastic
