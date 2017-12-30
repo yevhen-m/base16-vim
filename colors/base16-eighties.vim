@@ -29,7 +29,7 @@ syntax reset
 let g:colors_name = "base16-eighties"
 
 " Highlighting function
-fun <sid>hi(group, ctermfg, ctermbg, attr)
+fun! <sid>hi(group, ctermfg, ctermbg, attr)
   if a:ctermfg != ""
     exec "hi " . a:group . " ctermfg=" . a:ctermfg
   endif
@@ -68,7 +68,7 @@ call <sid>hi("Title",        s:blue,           "",               "none")
 call <sid>hi("Conceal",      s:semi_dark_gray, s:black,          "")
 call <sid>hi("Cursor",       s:black,          s:white,          "")
 call <sid>hi("NonText",      s:mid_gray,       "",               "")
-call <sid>hi("Normal",       s:white,          s:black,          "")
+call <sid>hi("Normal",       s:white,          "",          "")
 call <sid>hi("LineNr",       s:mid_gray,       s:black,      "")
 call <sid>hi("SignColumn",   s:mid_gray,       s:black,      "")
 call <sid>hi("SpecialKey",   s:mid_gray,       "",               "")
