@@ -29,21 +29,15 @@ syntax reset
 let g:colors_name = "base16-eighties"
 
 " Highlighting function
-fun! <sid>hi(group, ctermfg, ctermbg, attr)
-  let initial = 'highlight ' . a:group
-  let highlight_cmd = initial
-
+fun <sid>hi(group, ctermfg, ctermbg, attr)
   if a:ctermfg != ""
-    let highlight_cmd .=  " ctermfg=" . a:ctermfg
+    exec "hi " . a:group . " ctermfg=" . a:ctermfg
   endif
   if a:ctermbg != ""
-    let highlight_cmd .=  " ctermbg=" . a:ctermbg
+    exec "hi " . a:group . " ctermbg=" . a:ctermbg
   endif
   if a:attr != ""
-    let highlight_cmd .= " cterm=" . a:attr
-  endif
-  if highlight_cmd != initial
-      exec highlight_cmd
+    exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
   endif
 endfun
 
