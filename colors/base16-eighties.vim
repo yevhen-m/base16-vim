@@ -52,7 +52,7 @@ call <sid>hi("Folded",       s:mid_gray,       s:dark_gray,      "")
 call <sid>hi("IncSearch",    s:semi_dark_gray, s:yellow,         "bold")
 call <sid>hi("Italic",       "",               "",               "none")
 call <sid>hi("Macro",        s:red,            "",               "")
-call <sid>hi("MatchParen",   s:black,          s:mid_gray,       "")
+call <sid>hi("MatchParen",   s:white,          s:mid_gray,       "")
 call <sid>hi("ModeMsg",      s:green,          "",               "")
 call <sid>hi("MoreMsg",      s:green,          "",               "")
 call <sid>hi("Question",     s:blue,           "",               "")
@@ -210,9 +210,6 @@ call <sid>hi("SyntasticWarningSign", s:yellow, s:black, "")
 " ALE
 highlight link ALEErrorSign SyntasticErrorSign
 highlight link ALEWarningSign SyntasticWarningSign
-
-" Matchparen
-call <sid>hi("MatchParen", s:white, s:semi_dark_gray, "")
 
 " Vimfiler
 highlight link vimfilerNonMark    NERDTreeDirSlash
